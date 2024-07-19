@@ -14,21 +14,14 @@ This project provides a RESTful API using Flask that allows users to interact wi
 
 ## Installation
 
-1. **Clone the repository:**
-
-   ```bash
-   git clone https://github.com/yourusername/llama-api.git
-   cd llama-api
-   ```
-
-2. **Create a virtual environment :**
+1. **Create a virtual environment :**
 
    ```
    python -m venv venv
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
    ```
 
-3. **Install the required packages:**
+2. **Install the required packages:**
 
    Create a `requirements.txt` file with the following content:
 
@@ -45,7 +38,7 @@ This project provides a RESTful API using Flask that allows users to interact wi
    pip install -r requirements.txt
    ```
 
-4. **Download the LLaMA model** (if not using a pre-trained model from Hugging Face):
+3. **Download the LLaMA model** (if not using a pre-trained model from Hugging Face):
 
    Follow the instructions from the [Hugging Face model hub](https://huggingface.co/models) to download the model and tokenizer.
 
