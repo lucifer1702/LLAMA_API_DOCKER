@@ -1,0 +1,4 @@
+transformers
+flask
+requests
+flask-cors
