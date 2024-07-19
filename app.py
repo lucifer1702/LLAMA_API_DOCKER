@@ -8,6 +8,13 @@ CORS(app)
 
 
 class APIAgent:
+    """
+    APIAgent is a class to interact with an external API using requests.
+
+    Attributes:
+        base_url (str): The base URL of the API.
+    """
+
     def __init__(self, base_url):
         self.base_url = base_url
 
@@ -25,6 +32,15 @@ model_name = "facebook/llama-tiny"
 
 @app.route("/generate", methods=["POST"])
 def generate():
+    """
+    Generate a response using the LLaMA model or fetch information from the API based on the input text.
+
+    If the input text contains "get pet", it will call the API to get pet information.
+    Otherwise, it generates a response using the LLaMA model.
+
+    Returns:
+        json: The generated response or API information.
+    """
     model, tokenizer = llama_model(model_name)
     data = request.json
 
